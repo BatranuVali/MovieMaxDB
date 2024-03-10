@@ -1,0 +1,11 @@
+main:           #020a18
+secondary:      #e8eaef
+accent:         #fa1202
+
+main:           #020a18
+secondary:      #fdfffb
+accent:         #2ab8fc
+
+main:           #101010
+secondary:      #fffeff
+accent:         #f9c326
