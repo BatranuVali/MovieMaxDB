@@ -2,15 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="About" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link  rel="stylesheet" href="AboutStyle.css">
     <script  src="AboutScript.js"></script>
     <title>About</title>
 </head>
 <body>
-    <h1 id="title">About</h1>
-    <div id="about_content">
-        <div id="description">
+    <header>
+        <h1 id="title">About</h1>
+    </header>
+    <main>
+        <section id="description">
             <h2>Project Overview</h2>
             <p>This project is a movie database website created for a university course about web technologies. The website uses the UMDb's API to fetch movie data.</p>
 
@@ -21,23 +23,23 @@
                 <li><strong>Feature 3:</strong> Description of feature 3.</li>
                 <!-- Add more features as needed -->
             </ul>
-        </div>
-        <div id="implementation_details1">
+        </section>
+        <section id="implementation_details">
             <h2>Implementation Details</h2>
             <p>Details about how the project is implemented, including the technologies used, the structure of the code, and any unique implementation strategies.</p>
 
             <h2>Code Examples</h2>
             <p>Examples of key pieces of code used in the project. These should be placed in code boxes for easy copy-pasting.</p>
-        </div>
-        <div id="progress">
+        </section>
+        <section id="progress">
             <h2>Project Progress</h2>
             <p>Updates about the progress of the project, including completed features and future plans.</p>
-            <div class="update">
+            <article class="update">
                 <h3>First entry</h3>
-                <h4>10/03/2024</h4>
+                <time datetime="2024-03-10">10/03/2024</time>
                 <p>Today I've begun creating a <q>skeleton</q> for the about page.<br>My vision for this page is creating 3 main sections, one for the description, one in which I explain the code and one for updates.<br>For the updates I imagine a block format that has a title, date and description/text in which I explain what has been updated.</p>
-            </div>
-    </div>
-</div>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
