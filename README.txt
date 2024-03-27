@@ -6,6 +6,8 @@
     a) Django Framework
     b) API - Movie Database
     c) User Authentication system
+        i) User Model
+        ii) Create/Update/Delete User logic
 
 3. Frontend
     a) About Page (pagina extra)
