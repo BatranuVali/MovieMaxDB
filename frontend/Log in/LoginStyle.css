@@ -1,0 +1,120 @@
+:root {
+    --main-color: #336699;
+    --secondary-color: #99ccff;
+    --accent-color: #ff9900;
+    --element-width: 90%; /* Define the variable for element width */
+    --element-height: 50%; /* Define the variable for element height */
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 30px;
+    background-color: var(--secondary-color);
+}
+
+.loginCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: var(--element-width); /* Use the variable for element width */
+    height: var(--element-height); /* Use the variable for element height */
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--main-color);
+}
+
+a {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--accent-color);
+}
+
+.login {
+    display: inline-block;
+    width: var(--element-width); /* Use the variable for element width */
+}
+
+#loginbtn {
+    display: block;
+    width: 100%; /* Set the button width to 100% */
+    height: var(--element-height); /* Use the variable for element height */
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: var(--accent-color);
+    background-color: var(--secondary-color);
+    border: none; /* Remove the existing border */
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px var(--main-color); /* Add a neon glow effect using box-shadow */
+}
+
+#loginbtn:hover {
+    background-color: var(--accent-color);
+    color: var(--secondary-color);
+    box-shadow: 0 0 20px var(--main-color); /* Increase the glow effect on hover */
+}
+
+#signup {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+@media (min-width: 992px) {
+    /* Desktop */
+    .card {
+        grid-column: span 12;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Tablet */
+    .card {
+        grid-column: span 8;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Phone */
+    .card {
+        grid-column: span 4;
+    }
+}
